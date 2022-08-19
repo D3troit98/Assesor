@@ -23,20 +23,20 @@ const Header = ({ slideShow }) => {
         setPageNo(pagination())
     }, [slideShow])
 
-
+const whiteBackground = "bg-white rounded-md"
 
     return (
-        <div className='flex flex-col shadow-md p-3 '>
-
+        <div className='flex flex-col shadow-md p-3  '>
+                <div className={pageNo === 'Exam, Test and Pratical Assesment' || pageNo === 'Exam and Test Assesment'  || pageNo === 'Exam Assesment Only' ? whiteBackground : ''  }>
             <div className='flex flex-row rounded-sm justify-between'>
                 <img src={Logo} alt="logo" className='w-20 rounded-sm mr-5' />
-                <h3 className='text-xl text-slate-900'>Evaluation of Stduent Performance Using Fozzy Logic</h3>
+                <h3 className='text-xl font-semibold text-slate-900'>Evaluation of Student Performance Using Fuzzy Logic</h3>
             </div>
             <div className="justify-center text-center">
                 <h2 className=' text-slate-900'>Yaba College of Technology</h2>
                 <h4>{pageNo}</h4>
             </div>
-
+            </div>
         </div>
     )
 }

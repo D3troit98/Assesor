@@ -11,10 +11,10 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
     }
 
     return (
-        <div className='mt-5 md:mt-0 flex-col '>
+        <div className='mt-5 md:mt-0 flex-col bg-green-100 rounded-lg'>
             <form onSubmit={handleSubmit2}>
-                <h3 className="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
-                <div className=' flex flex-row'>
+            <h3 className="text-lg font-medium leading-6 text-gray-900 ml-4">Personal Information</h3>
+                <div className=' flex flex-row shadow-sm rounded-sm'>
 
                     <div className='shadow overflow-hidden sm:rounded-md'>
                         <div className='px-4 py-5 only:sm:p-6'>
@@ -26,7 +26,7 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
                                 name="firstname"
                                 id="firstname"
                                 autoComplete='firstName'
-                                className='mt-1 focus:ring-indogo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+                                className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.firstname}
                             />
@@ -43,7 +43,7 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
                                 name="lastname"
                                 id="lastname"
                                 autoComplete='lastName'
-                                className='mt-1 focus:ring-indogo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+                                className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.lastname}
                             />
@@ -64,7 +64,7 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
                                     name="course"
                                     id="course"
                                     autoComplete='course'
-                                    className='mt-1 focus:ring-indogo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+                                    className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                     onChange={handleChange}
                                     value={form.course}
                                 />
@@ -81,7 +81,7 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
                                     name="registration"
                                     id="registration"
                                     autoComplete='registration'
-                                    className='mt-1 focus:ring-indogo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+                                    className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                     onChange={handleChange}
                                     value={form.registration}
                                 />
@@ -100,7 +100,7 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
                                 name="age"
                                 id="age"
                                 autoComplete='age'
-                                className='mt-1 focus:ring-indogo-500 focus:border-indigo-500 block w-20 shadow-sm sm:text-sm border-gray-300 rounded-md '
+                                className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-10 shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.age}
                             />
@@ -108,7 +108,7 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
                     </div>
 
 
-                    <p className="mt-1 text-sm text-gray-600">Input Only Your Exam Score.</p>
+                    <p className="mt-1 ml-4 text-sm text-gray-600">Input Your Exam(0-60) and Test(0-40) Score.</p>
 
                     <div className='shadow overflow-hidden sm:rounded-sm flex flex-row'>
                         <div className='px-4 py-5 sm:p-6'>
@@ -119,7 +119,7 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
                                 type="number"
                                 name="exam"
                                 id="exam"
-                                className='mt-1 focus:ring-indogo-500 focus:border-indigo-500 block w-20 shadow-sm sm:text-sm border-gray-300 rounded-md '
+                                className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.exam}
                             />
@@ -133,7 +133,7 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
                                 type="number"
                                 name="test"
                                 id="test"
-                                className='mt-1 focus:ring-indogo-500 focus:border-indigo-500 block w-20 shadow-sm sm:text-sm border-gray-300 rounded-md '
+                                className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.test}
                             />
@@ -146,7 +146,7 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
                         <div className="px-4 py-3 sm:px-6">
                             <button
                                 type="submit"
-                                className="inline-flex  py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                className="inline-flex  py-2 px-4 border border-transparent shadow-sm text-sm font-medium  bg-neutral-600 rounded-md text-center text-white pt-4 cursor-pointer hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-500"
                             >
                                 Check Result
                             </button>
@@ -156,7 +156,7 @@ const TwoExams = ({ form, setForm, setSlidesShow, handleSubmit2 }) => {
                         <div className="px-4 py-3 sm:px-6">
                             <button
                                 type="button"
-                                className="inline-flex  py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-400 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-green-500"
+                                className="inline-flex  py-2 px-4 border border-transparent shadow-sm text-sm font-medium  bg-neutral-600 rounded-md text-center text-white pt-4 cursor-pointer hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-500"
                                 onClick={() => setSlidesShow(1)}
                             >
                                 Home

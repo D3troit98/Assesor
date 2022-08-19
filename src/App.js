@@ -46,8 +46,8 @@ const App = () => {
 
 
   return (
-    <div className='h-auto  bg-slate-500 lg:mx-96 mt-4 rounded-md max-w-full'>
-      <div className='p-10 mx-auto border-orange-600'>
+    <div className='h-auto  bg-green-300 lg:mx-96 mt-4 rounded-md max-w-full'>
+      <div className='p-10 mx-auto border-2 border-white'>
         <Header slideShow={slideShow} />
         {slideShow === 1 ? <Course setSlidesShow={setSlidesShow} />
           : slideShow === 2 ? <Form form={form} setForm={setForm} handleSubmit={handleSubmit} setSlidesShow={setSlidesShow} setResultSheet={setResultSheet} />
