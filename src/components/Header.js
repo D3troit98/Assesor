@@ -6,14 +6,14 @@ const Header = ({ slideShow }) => {
         const pagination = () => {
 
             if (slideShow === 1) {
-                return "Select Assesment Method"
+                return "Select Assessment Method"
             } else if (slideShow === 2) {
-                return "Exam, Test and Pratical Assesment"
+                return "Exam, Test and Pratical Assessment"
             }
             else if (slideShow === 3) {
-                return "Exam and Test Assesment"
+                return "Exam and Test Assessment"
             } else if (slideShow === 4) {
-                return "Exam Assesment Only"
+                return "Exam Assessment Only"
             } else if (slideShow === 5) {
                 return "Loading..."
             } else {
