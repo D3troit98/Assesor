@@ -2,7 +2,7 @@ const twoExamLogic = ({ age, course, exam, firstname, lastname, registration, te
     //Fozzy logic calculations done 
     if (exam <= 60 && test <= 40) {
         const average = parseInt(exam) + parseInt(test)
-        if (average < 40) {
+        if (average <= 40) {
             const formObj = {
                 firstname: firstname,
                 lastname: lastname,
@@ -13,7 +13,7 @@ const twoExamLogic = ({ age, course, exam, firstname, lastname, registration, te
                 average: average
             }
             return formObj
-        } else if (average < 45) {
+        } else if (average <= 45) {
             const formObj = {
                 firstname: firstname,
                 lastname: lastname,
@@ -24,7 +24,7 @@ const twoExamLogic = ({ age, course, exam, firstname, lastname, registration, te
                 average: average
             }
             return formObj
-        } else if (average < 50) {
+        } else if (average <= 50) {
             const formObj = {
                 firstname: firstname,
                 lastname: lastname,
@@ -35,7 +35,7 @@ const twoExamLogic = ({ age, course, exam, firstname, lastname, registration, te
                 average: average
             }
             return formObj
-        } else if (average < 60) {
+        } else if (average <= 60) {
             const formObj = {
                 firstname: firstname,
                 lastname: lastname,
@@ -46,7 +46,7 @@ const twoExamLogic = ({ age, course, exam, firstname, lastname, registration, te
                 average: average
             }
             return formObj
-        } else if (average < 70) {
+        } else if (average <= 70) {
             const formObj = {
                 firstname: firstname,
                 lastname: lastname,
@@ -57,7 +57,7 @@ const twoExamLogic = ({ age, course, exam, firstname, lastname, registration, te
                 average: average
             }
             return formObj
-        } else if (average < 100) {
+        } else if (average <= 100) {
             const formObj = {
                 firstname: firstname,
                 lastname: lastname,
@@ -75,7 +75,7 @@ const twoExamLogic = ({ age, course, exam, firstname, lastname, registration, te
                 age: age,
                 course: course,
                 registration: registration,
-                result: "default ",
+                result: "default",
                 average: average
             }
             return formObj

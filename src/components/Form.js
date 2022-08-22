@@ -30,6 +30,8 @@ const Form = ({ form, setForm, handleSubmit, setSlidesShow }) => {
                                 className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.firstname}
+                                placeholder="First Name"
+                                required
                             />
                         </div>
                     </div>
@@ -47,6 +49,8 @@ const Form = ({ form, setForm, handleSubmit, setSlidesShow }) => {
                                 className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.lastname}
+                                placeholder="Last Name"
+                                required
                             />
                         </div>
                     </div>
@@ -68,6 +72,7 @@ const Form = ({ form, setForm, handleSubmit, setSlidesShow }) => {
                                     className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                     onChange={handleChange}
                                     value={form.course}
+                                    placeholder="CSC"
                                 />
                             </div>
                         </div>
@@ -85,6 +90,8 @@ const Form = ({ form, setForm, handleSubmit, setSlidesShow }) => {
                                     className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                     onChange={handleChange}
                                     value={form.registration}
+                                    placeholder="Reg Number"
+                                    required
                                 />
                             </div>
                         </div>
@@ -104,6 +111,7 @@ const Form = ({ form, setForm, handleSubmit, setSlidesShow }) => {
                                 className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-10 shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.age}
+                                placeholder="21"
                             />
                         </div>
                     </div>
@@ -118,9 +126,10 @@ const Form = ({ form, setForm, handleSubmit, setSlidesShow }) => {
                                 name="exam"
                                 id="exam"
                                 className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
-                                onChange={handleChange}
-                                placeholder={"0-60"}
+                                onChange={handleChange}                    
                                 value={form.exam}
+                                placeholder="0-60"
+                                required
                             />
                         </div>
 
@@ -134,8 +143,9 @@ const Form = ({ form, setForm, handleSubmit, setSlidesShow }) => {
                                 id="test"
                                 className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
-                                placeholder="0-20"
                                 value={form.test}
+                                placeholder="0-20"
+                                required
                             />
                         </div>
 
@@ -144,13 +154,14 @@ const Form = ({ form, setForm, handleSubmit, setSlidesShow }) => {
                                 Project
                             </label>
                             <input
+                                value={form.project}
                                 type="number"
                                 name="project"
                                 id="project"
                                 className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
-                                onChange={handleChange}
-                                placeholder={"0-20"}
-                                value={form.project}
+                                onChange={handleChange} 
+                                placeholder="0-20"
+                                required
                             />
                         </div>
 

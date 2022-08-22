@@ -5,7 +5,7 @@ import { Form, Loader, Result, Course, OneExam, TwoExams, Header } from './compo
 const App = () => {
   //form to store the users form
   const [form, setForm] = useState({
-    firstname: '', lastname: '', course: '', registration: '', age: 0, exam: 0, test: 0, project: 0
+    firstname: '', lastname: '', course: '', registration: '', age: '', exam: '', test: '', project: ''
   })
   //a way to move the pages
   const [slideShow, setSlidesShow] = useState(1)

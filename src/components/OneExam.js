@@ -29,6 +29,8 @@ const OneExam = ({ form, setForm, handleSubmit1, setSlidesShow }) => {
                                 className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.firstname}
+                                placeholder="First Name"
+                                required
                             />
                         </div>
                     </div>
@@ -46,6 +48,8 @@ const OneExam = ({ form, setForm, handleSubmit1, setSlidesShow }) => {
                                 className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.lastname}
+                                placeholder="Last Name"
+                                required
                             />
                         </div>
                     </div>
@@ -67,6 +71,7 @@ const OneExam = ({ form, setForm, handleSubmit1, setSlidesShow }) => {
                                     className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                     onChange={handleChange}
                                     value={form.course}
+                                    placeholder="CSC"
                                 />
                             </div>
                         </div>
@@ -84,6 +89,8 @@ const OneExam = ({ form, setForm, handleSubmit1, setSlidesShow }) => {
                                     className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-full shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                     onChange={handleChange}
                                     value={form.registration}
+                                    placeholder="Reg Number"
+                                    required
                                 />
                             </div>
                         </div>
@@ -103,6 +110,7 @@ const OneExam = ({ form, setForm, handleSubmit1, setSlidesShow }) => {
                                 className='border mt-1 focus:ring-green-400 focus:border-green-500 block w-10 shadow-sm sm:text-sm border-green-300 rounded-md hover:border-green-600 '
                                 onChange={handleChange}
                                 value={form.age}
+                                placeholder
                             />
                         </div>
                     </div>
@@ -123,6 +131,7 @@ const OneExam = ({ form, setForm, handleSubmit1, setSlidesShow }) => {
                                 onChange={handleChange}
                                 value={form.exam}
                                 placeholder="0-100"
+                                required
                             />
                         </div>
 
