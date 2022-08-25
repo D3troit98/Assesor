@@ -1,6 +1,8 @@
 # Getting Started with Create React App
-![alt text](https://github.com/D3troit98/Assesor/blob/8afa59365693d426d71c74a3cea43cc703e7abac/Screenshot%20(94).png?raw=true)
-
+![alt text](https://github.com/D3troit98/Assesor/blob/8afa59365693d426d71c74a3cea43cc703e7abac/Screenshot%20(95).png?raw=true)
+![alt text](https://github.com/D3troit98/Assesor/blob/8afa59365693d426d71c74a3cea43cc703e7abac/Screenshot%20(96).png?raw=true)
+![alt text](https://github.com/D3troit98/Assesor/blob/8afa59365693d426d71c74a3cea43cc703e7abac/Screenshot%20(97).png?raw=true)
+![alt text](https://github.com/D3troit98/Assesor/blob/8afa59365693d426d71c74a3cea43cc703e7abac/Screenshot%20(98).png?raw=true)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
